@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0000">
+
+    <TextView
+        android:id="@+id/tvVictorySalutation"
+        android:layout_width="295dp"
+        android:layout_height="87dp"
+        android:clickable="false"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivVictoryImg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059"
+        android:text="@string/victory_saluation" />
+
+    <TextView
+        android:id="@+id/tvScoreSummary"
+        android:layout_width="295dp"
+        android:layout_height="87dp"
+        android:clickable="false"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivVictoryImg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ivVictoryImg"
+        android:layout_width="412dp"
+        android:layout_height="358dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/space_vietnam" />
+
+    <ImageButton
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="56dp"
+        android:layout_height="60dp"
+        android:foreground="@drawable/again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvScoreSummary"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvAgain"
+        app:layout_constraintTop_toBottomOf="@+id/tvScoreSummary"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <TextView
+        android:id="@+id/tvAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press the button to return to\nthe main menu"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvScoreSummary"
+        app:layout_constraintTop_toBottomOf="@+id/tvScoreSummary"
+        app:layout_constraintVertical_bias="0.365" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

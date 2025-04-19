@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0000"
+    tools:context=".ClickyActivity">
+
+    <ImageButton
+        android:id="@+id/btnUp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#938F8F"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arrowDisplayLayout"
+        app:layout_constraintVertical_bias="0.271" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Clickly Clicky Hero" />
+
+    <TextView
+        android:id="@+id/tvClickyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Combo Title"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.13"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/arrowDisplayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.191"
+        android:showDividers="middle"
+        android:divider="@drawable/empty_tall_divider"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/btnDown"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:background="#938F8F"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnRight"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#938F8F"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/right"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnUp" />
+
+    <ImageButton
+        android:id="@+id/btnLeft"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#938F8F"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/left"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnUp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
